@@ -81,6 +81,18 @@ body {
 /* General reuseable components */
 /*********************************/
 
+.center-text {
+  text-align: center;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+strong {
+  font-weight: 500;
+}
+
 .container {
   max-width: 120rem;
   padding: 0 3.2rem;
@@ -384,4 +396,128 @@ body {
   padding-bottom: 50%;
   background-color: #94d82d;
   z-index: -1;
+}
+
+/*********************************/
+/* Meals section */
+/*********************************/
+
+.section-meals {
+  padding: 9.6rem 0;
+}
+
+.meal-img {
+  width: 100%;
+}
+
+.meal-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.meal-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.meal-attribute {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.meal-icon {
+  font-size: 2.4rem;
+  color: #85c229;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #333;
+  border-radius: 100px;
+  font-weight: 500;
+}
+
+.tag-vegetarian {
+  background-color: #85c229;
+}
+
+.tag-vegan {
+  background-color: #8cd81b;
+}
+
+.tag-paleo {
+  background-color: #ffd43b;
+}
+
+.meal-tags {
+  margin-bottom: 1.2rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.meal {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.44s;
+}
+
+.meal:hover {
+  box-shadow: 0 3.6rem 6.4rem rgba(0, 0, 0, 0.05);
+  transform: translateY(-1.2rem);
+}
+
+.meal-content {
+  padding: 4.8rem;
+  padding-top: 3.2rem;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-icon {
+  font-size: 3rem;
+  color: #85c229;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1.6rem;
+}
+
+.all-recipes {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.link:link,
+.link:visited {
+  color: #85c229;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  display: inline-block;
+  padding-bottom: 2px;
+  transition: all 0.33s;
+}
+
+.link:hover,
+.link:active {
+  color: #85c229;
+  border-bottom: 1px solid transparent;
 }
