@@ -186,6 +186,7 @@ strong {
   width: 100%;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -193,9 +194,26 @@ strong {
   text-decoration: none;
   font-size: 2rem;
   border-radius: 10px;
-  color: #fff;
+  color: inherit;
   transition: all 0.33s;
   font-weight: 500;
+
+  /* for .btn itself */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.btn-form {
+  background-color: #0f1604;
+  color: #ddd;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn-form:hover {
+  background-color: #fff;
+  color: #555;
 }
 
 .btn--cta:link,
@@ -688,4 +706,89 @@ strong {
   font-size: 1.6rem;
   line-height: 1.6;
   text-align: center;
+}
+
+/*********************************/
+/* CTA Section */
+/*********************************/
+
+.section-cta {
+  padding: 9.6rem 0;
+}
+
+.cta {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* background-color: #8cd81b; */
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.25);
+  border-radius: 11px;
+  background-image: linear-gradient(to right bottom, #76ad24, #b4e46c);
+}
+
+.cta-text-box {
+  color: #222;
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+}
+
+.cta .heading-secondary {
+  color: inherit;
+  margin-bottom: 3.2rem;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.cta-img-box {
+  background-image: linear-gradient(to right bottom, #76ad2400, #b4e46cb7),
+    url("../img/eating.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  border: none;
+  border-radius: 9px;
+  color: inherit;
+  background-color: #f4fbea;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
+}
+
+.cta-form select {
+  font-family: inherit;
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+*:focus {
+  outline: 0.3rem dashed #85c229;
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(255, 240, 230, 0.5);
 }
